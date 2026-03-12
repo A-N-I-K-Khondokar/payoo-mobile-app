@@ -29,7 +29,7 @@
           <img class="w-[50px] h-[48px]" src="./assets/Group.png" alt="" />
         </div>
         <div>
-          <p>$ <span>45000</span></p>
+          <p>$ <span id="total-balance">45000</span></p>
           <p>Available Balance</p>
         </div>
       </div>
@@ -88,13 +88,34 @@
         </select><br>
 
         <label class="font-semibold text-xl" for="">Bank Account Number</label><br>
-        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" id="" placeholder="Enter 11 digit account number"><br>
+        <input id="account-number" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 11 digit account number"><br>
 
         <label class="font-semibold text-xl" for="">Amount to add</label><br>
-        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" id="" placeholder="Add Amount To Withdraw"><br>
+        <input id="add-amount" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Add Amount To Add"><br>
 
         <label class="font-semibold text-xl" for="">Enter Your Pin</label><br>
-        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" id="" placeholder="Enter 4 Digit Pin Number">
+        <input id="pass-word" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 4 Digit Pin Number">
+
+         <button id="Add-money-btn" class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl">Add Money</button>
+      </form>
+    </div>
+
+    <!-- cash out section  -->
+      <div class="mx-6 mb-6">
+      <h1 class="mt-10 mb-5 font-bold text-2xl">Cash Out</h1>
+      <form class="ml-6">
+       
+
+        <label class="font-semibold text-xl" for="">Agent Number</label><br>
+        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 11 digit account number"><br>
+
+        <label class="font-semibold text-xl" for="">Amount</label><br>
+        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Add Amount To Add"><br>
+
+        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br>
+        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 4 Digit Pin Number">
+
+         <button  class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl">Withdraw Amount</button>
       </form>
     </div>
 
