@@ -49,27 +49,45 @@
 
     <!-- cards -->
     <div class="grid grid-rows-2 grid-cols-3 gap-2 mx-3">
-      <div id="add-money-card" class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="add-money-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg border-green-400 border-2"
+      >
         <img class="mx-auto block" src="./assets/wallet1.png" alt="" />
         <p class="mt-2">Add Money</p>
       </div>
-      <div id="cash-out-card" class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="cash-out-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg bg-white"
+      >
         <img class="mx-auto block" src="./assets/send1.png" alt="" />
         <p class="mt-2">Cashout</p>
       </div>
-      <div class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="transfer-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg bg-white"
+      >
         <img class="mx-auto block" src="./assets/money1.png" alt="" />
         <p class="mt-2">Transfer Money</p>
       </div>
-      <div class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="bonus-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg bg-white"
+      >
         <img class="mx-auto block" src="./assets/bonus1.png" alt="" />
         <p class="mt-2">Get Bonus</p>
       </div>
-      <div class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="payBill-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg bg-white"
+      >
         <img class="mx-auto block" src="./assets/purse1.png" alt="" />
         <p class="mt-2">Pay Bill</p>
       </div>
-      <div class="py-5 px-2 text-center shadow-sm rounded-lg bg-white">
+      <div
+        id="Transactions-card"
+        class="common2 py-5 px-2 text-center shadow-sm rounded-lg bg-white"
+      >
         <img class="mx-auto block" src="./assets/transaction1.png" alt="" />
         <p class="mt-2">Transactions</p>
       </div>
@@ -77,47 +95,207 @@
 
     <!-- Add money section -->
 
-    <div id="add-money" class="mx-6 mb-6">
+    <div id="add-money" class="common mx-6 mb-6">
       <h1 class="mt-10 mb-5 font-bold text-2xl">Add Money</h1>
       <form class="ml-6">
         <label class="font-semibold text-xl" for="">Select A Bank</label><br />
-        <select class="select select-neutral w-full my-4 h-[53px] text-gray-500 pl-3 border-none">
+        <select
+          class="select select-neutral w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+        >
           <option selected>Dutch-Bangla Bank Limited (DBBL)</option>
           <option>BRAC Bank PLC</option>
-          <option>The City Bank Limited</option>
-        </select><br>
+          <option>The City Bank Limited</option></select
+        ><br />
 
-        <label class="font-semibold text-xl" for="">Bank Account Number</label><br>
-        <input id="account-number" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 11 digit account number"><br>
+        <label class="font-semibold text-xl" for="">Bank Account Number</label
+        ><br />
+        <input
+          id="account-number"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 11 digit account number"
+        /><br />
 
-        <label class="font-semibold text-xl" for="">Amount to add</label><br>
-        <input id="add-amount" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Add Amount To Add"><br>
+        <label class="font-semibold text-xl" for="">Amount to add</label><br />
+        <input
+          id="add-amount"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Add Amount To Add"
+        /><br />
 
-        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br>
-        <input id="pass-word" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 4 Digit Pin Number">
+        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br />
+        <input
+          id="pass-word"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 4 Digit Pin Number"
+        />
 
-         <button id="Add-money-btn" class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl">Add Money</button>
+        <button
+          id="Add-money-btn"
+          class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl"
+        >
+          Add Money
+        </button>
       </form>
     </div>
 
     <!-- cash out section  -->
-      <div id="cash-out" class="mx-6 mb-6 hidden">
+    <div id="cash-out" class="common mx-6 mb-6 hidden">
       <h1 class="mt-10 mb-5 font-bold text-2xl">Cash Out</h1>
       <form class="ml-6">
-       
+        <label class="font-semibold text-xl" for="">Agent Number</label><br />
+        <input
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 11 digit account number"
+        /><br />
 
-        <label class="font-semibold text-xl" for="">Agent Number</label><br>
-        <input class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 11 digit account number"><br>
+        <label class="font-semibold text-xl" for="">Amount</label><br />
+        <input
+          id="cash-out-amount"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Add Amount To Add"
+        /><br />
 
-        <label class="font-semibold text-xl" for="">Amount</label><br>
-        <input id="cash-out-amount" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Add Amount To Add"><br>
+        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br />
+        <input
+          id="pin-number"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 4 Digit Pin Number"
+        />
 
-        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br>
-        <input id="pin-number" class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none" type="text" name="" placeholder="Enter 4 Digit Pin Number">
-
-         <button id="w-btn" class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl">Withdraw Amount</button>
+        <button
+          id="w-btn"
+          class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl"
+        >
+          Withdraw Amount
+        </button>
       </form>
     </div>
+
+    <!-- transfer-money-section  -->
+    <div id="transfer-money" class="common mx-6 mb-6 hidden">
+      <h1 class="mt-10 mb-5 font-bold text-2xl">Transfer Money</h1>
+      <form class="ml-6">
+        <label class="font-semibold text-xl" for="">User Account Number</label
+        ><br />
+        <input
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 11 digit account number"
+        /><br />
+
+        <label class="font-semibold text-xl" for="">Amount</label><br />
+        <input
+          id="cash-out-amount"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Add Amount To Add"
+        /><br />
+
+        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br />
+        <input
+          id="pin-number"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 4 Digit Pin Number"
+        />
+
+        <button
+          id="w-btn"
+          class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl"
+        >
+          Send Now
+        </button>
+      </form>
+    </div>
+
+    <!-- get-bonus-section  -->
+    <div id="get-bonus" class="common mx-6 mb-6 hidden">
+      <h1 class="mt-10 mb-5 font-bold text-2xl">Get Bonus</h1>
+      <form class="ml-6">
+        <label class="font-semibold text-xl" for="">Enter Bonus Coupon</label
+        ><br />
+        <input
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter your coupon"
+        /><br />
+
+        <button
+          id="w-btn"
+          class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl"
+        >
+          Get Bonus
+        </button>
+      </form>
+    </div>
+
+
+    <!-- pay-bill-section  -->
+      <div id="pay-bill" class="common mx-6 mb-6 hidden">
+      <h1 class="mt-10 mb-5 font-bold text-2xl">Pay Bill</h1>
+      <form class="ml-6">
+        <label class="font-semibold text-xl" for="">Select To Pay</label><br />
+        <select
+          class="select select-neutral w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+        >
+          <option selected>Dutch-Bangla Bank Limited (DBBL)</option>
+          <option>BRAC Bank PLC</option>
+          <option>The City Bank Limited</option></select
+        ><br />
+
+        <label class="font-semibold text-xl" for="">Biller Account Number</label
+        ><br />
+        <input
+          id="account-number"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 11 digit account number"
+        /><br />
+
+        <label class="font-semibold text-xl" for="">Amount to add</label><br />
+        <input
+          id="add-amount"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Add Amount To Add"
+        /><br />
+
+        <label class="font-semibold text-xl" for="">Enter Your Pin</label><br />
+        <input
+          id="pass-word"
+          class="w-full my-4 h-[53px] text-gray-500 pl-3 border-none"
+          type="text"
+          name=""
+          placeholder="Enter 4 Digit Pin Number"
+        />
+
+        <button
+          id="Add-money-btn"
+          class="btn bg-[#0874F2] w-full h-[53px] text-white font-semibold text-xl rounded-3xl"
+        >
+          Pay Now
+        </button>
+      </form>
+    </div>
+
 
     <!-- javaScript  -->
     <script src="./home.js"></script>
